@@ -1,0 +1,10 @@
+package com.foodbillpro.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    // No local file serving needed
+    // Images are stored as Base64 in database
+}
