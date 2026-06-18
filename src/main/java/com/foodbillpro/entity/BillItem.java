@@ -16,7 +16,7 @@ public class BillItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @JsonBackReference   // ← ADD THIS
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "bill_id", nullable = false)
     private Bill bill;
