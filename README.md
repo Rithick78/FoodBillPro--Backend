@@ -40,7 +40,7 @@ FoodBill Pro is a digital menu and billing system that allows customers to view 
 ## Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
+|-------|---------|
 | Frontend | React 19, Vite, Tailwind CSS v4 |
 | State Management | Redux Toolkit |
 | Routing | React Router v7 |
@@ -51,6 +51,7 @@ FoodBill Pro is a digital menu and billing system that allows customers to view 
 | Security | Spring Security + JWT |
 | Database | MySQL |
 | ORM | JPA / Hibernate |
+| Containerization | Docker |
 
 ---
 
@@ -82,6 +83,8 @@ Backend — foodbillpro-backend/
 │   ├── repository/        # JPA repositories
 │   ├── security/          # JwtUtil, JwtFilter
 │   └── service/           # ProductService, BillService
+├── Dockerfile             # Builds the Spring Boot backend image
+└── .dockerignore          # Excludes target/, .mvn/, IDE files from build context
 ```
 ---
 ## Key Design Decisions
@@ -93,6 +96,15 @@ Backend — foodbillpro-backend/
 - **Tailwind CSS v4** — CSS-based config, no tailwind.config.js required
 
 ---
+
+## Containerization
+
+- Backend (Spring Boot) is containerized with a **Dockerfile**, with a **.dockerignore** to keep the build context clean (excludes `target/`, `.mvn/`, IDE/config files, etc.)
+- Frontend containerization is planned next — will follow a multi-stage build (Vite build stage → lightweight static server) to keep the image small
+- A `docker-compose.yml` tying frontend, backend, and MySQL together is a planned next step once both images are ready
+
+---
+
 
 ## 📸 Screenshots
 
