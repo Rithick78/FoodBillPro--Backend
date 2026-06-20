@@ -108,17 +108,17 @@ Backend — foodbillpro-backend/
 
 ## 📸 Screenshots
 
-| Entry | User Menu | Admin Dashboard |
-|---|---|---|
-| ![Entry](screenshots/entry.png) | ![User Menu](screenshots/usermenu.png) | ![Admin Dashboard](screenshots/dashboard.png) |
+| Entry                           | User Menu                              | Admin Dashboard                               |
+|---------------------------------|----------------------------------------|-----------------------------------------------|
+| ![Entry](screenshots/Entry.png) | ![User Menu](screenshots/UserMenu.png) | ![Admin Dashboard](screenshots/Dashboard.png) |
 
-| Products | Add Product | Billing 1 |
-|---|---|---|
-| ![Products](screenshots/products.png) | ![Add Product](screenshots/addproduct.png) | ![Billing 1](screenshots/bill1.png) |
+| Products                              | Add Product                                | Billing 1                           |
+|---------------------------------------|--------------------------------------------|-------------------------------------|
+| ![Products](screenshots/Products.png) | ![Add Product](screenshots/AddProduct.png) | ![Billing 1](screenshots/Bill1.png) |
 
-| Billing 2 | Billing 3 | Bills |
-|---|---|---|
-| ![Billing 2](screenshots/bill2.png) | ![Billing 3](screenshots/bill3.png) | ![Bills](screenshots/bills.png) |
+| Billing 2                           | Billing 3                           | Bills                           |
+|-------------------------------------|-------------------------------------|---------------------------------|
+| ![Billing 2](screenshots/Bill2.png) | ![Billing 3](screenshots/Bill3.png) | ![Bills](screenshots/Bills.png) |
 
 ## 📬 Contact
 
