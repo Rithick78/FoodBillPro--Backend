@@ -4,6 +4,8 @@
 
 ---
 
+[🌐 Live Demo](https://foodbillpro.netlify.app/) · [📧 Contact](mailto:rithickjacksonv@gmail.com) · [💼 LinkedIn](https://www.linkedin.com/in/rithickjackson/)
+
 ## Problem Statement
 
 I identified a common challenge in the food service industry where customers are not aware of real-time product availability. This often leads to order modifications, longer waiting times, and customer dissatisfaction. To solve this, I developed a digital menu and billing system that provides live product availability, product images, and streamlined order management through an admin dashboard.
