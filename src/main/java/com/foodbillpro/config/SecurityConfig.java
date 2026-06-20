@@ -2,6 +2,7 @@ package com.foodbillpro.config;
 
 import com.foodbillpro.security.JwtFilter;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -40,17 +41,14 @@ public class SecurityConfig {
         return http.build();
     }
 
+    @Value("${cors.allowed-origin}")
+    private String allowedOrigins;
+
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of(
-                "http://localhost:5173",
-                "http://localhost:3000"
-        ));
-        // PATCH method explicitly added
-        config.setAllowedMethods(List.of(
-                "GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"
-        ));
+        config.setAllowedOrigins(List.of(allowedOrigins.split(",")));
+        config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
         config.setMaxAge(3600L);
